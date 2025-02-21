@@ -4,38 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donna Tao's Arts and Crafts Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <nav>
-        <img src="images/fancy_flower.png" alt="donna taos artwork">
-        <ul>
-            <li><a href="artwork.html">Artwork</a></li>
-            <li><a href="digital_art.html">Digital Art</a></li>
-            <li><a href="crochet.html">Crochet</a></li>
-            <li><a href="crafts.html">Crafts</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-<h1>Donna Tao's Arts and Crafts Portfolio</h1>
-<div>
-    <h2>Featured Art</h2>
-    <img src="images/bears on beach.JPG" alt="bear painting">
-    <img src="images/rose_art_card.jpg" alt="art card">
-    <img src="images/baby_dino_outfit.jpg" alt="crochet baby outfit">
-    <img src="images/Angel_rbart.png" alt="angel digital art">
-</div>
-<div>
-    <h2>Article's</h2>
-    <p>Explore my collection of favorite crochet patterns, crafting tutorials 
-        and other arts and craft links</p>
-        <a href="explore_articles.html">Explore</a>
-</div>
-</main>
-<footer>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a> 
-</footer>
+    <header class="header">
+        <a href="index.html">
+        <img src="images/fancy_flower.png" alt="donna taos art home logo">
+        </a>
+        <nav class="nav-buttons">
+            <a href="artwork.html">ARTWORK</a>
+            <a href="crafts.html">CRAFTS</a>
+            <a href="crochet.html">CROCHET</a>
+            <a href="digital_art.html">DIGITAL ART</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>Donna Tao's Arts and Crafts</h1>
+        <div class="content">
+            <div class="image-section">
+                <img src="images/bears on beach.JPG" alt="bears on beach painting">
+                <img src="images/rose_art_card.jpg" alt="rose art card">
+                <img src="images/Angel_rbart.png" alt="angel red bubble art">
+                <img src="images/baby_dino_outfit.jpg" alt="crochet dino art">
+            </div>
+            <div class="text-section">
+                <h2>Favorite articles and tutorials</h2>
+                <p>Over time I have collected all many arts and craft articles and videos
+                    from my favorite patterns, art medium tutorials, digital art how to
+                    videos and more. Select the subject below to go to my favorite links.
+                </p>
+                <a href="patterns.html">crochet patterns</a>
+                <a href="art_tutorials.html">misc art tutorials</a>
+                <a href="digital_art_creation.html">digital art tutorials</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </footer>
 </body>
 </html>
