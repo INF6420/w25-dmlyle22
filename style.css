@@ -1,0 +1,105 @@
+
+/*sets page text to arial fonts*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+.header img {
+    height: 50px;
+}
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+.nav-buttons a {
+    background-color: #555;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.nav-buttons a:hover {
+    background-color: #777;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+.main h1 {
+    text-align: center;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;  
+}
+.image-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    align-self: flex-start;
+    margin-left: 0;
+}
+.image-section img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.text-section {
+    max-width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+.text-section h2 {
+    font-size: 20px;
+}
+.text-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.text-section a {
+    display: block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: none;
+}
+.text-section a:hover {
+    text-decoration: underline;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
