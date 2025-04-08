@@ -9,7 +9,10 @@
 <body>
     <header class="header">
         <a href="index.html">
-            <img src="images/fancy_flower.png" alt="donna taos art home logo">
+            <div class="logo">
+                <img src="images/fancy_flower.png" alt="donna taos art home logo">
+                <span class="logo-text">HOME</span>
+            </div>
         </a>
         <nav class="nav-buttons">
             <a href="artwork.html">ARTWORK</a>
@@ -19,13 +22,38 @@
         </nav>
     </header>
 <main>
+    <h1 class="main">Contact Me</h1>
+    <form class="contact-form" action="https://formspree.io/f/mgvaekpk" method="post" data-validate>
+        <div>
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name">
+        </div>
 
+        <div>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" required>
+        </div>
+        
+        <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        
+        <div>
+        <button type="submit">Send Message</button>
+        </div>
 
-    
+    </form>
 </main>
 <footer class="footer">
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
 </footer>
+<script 
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/validate@2.2.0/dist/validate.min.js">  
+</script>
+<script>
+    validate.init();
+</script>
 </body>
 </html>
