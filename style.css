@@ -133,6 +133,84 @@ body {
 .footer a:hover {
     text-decoration: underline;
 }
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+	.content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.image-section {
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 100%;
+	}
+
+	.text-section {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav-buttons {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.image-section {
+		grid-template-columns: 1fr;
+	}
+
+	.text-section h2 {
+		font-size: 18px;
+	}
+	.text-section p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 480px) {
+	.header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.nav-buttons {
+		width: 100%;
+		justify-content: space-around;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.logo {
+		margin-bottom: 10px;
+	}
+
+	.image-section img:hover {
+		transform: none;
+	}
+
+	.main {
+		padding: 10px;
+	}
+
+	.main h1 {
+		font-size: 22px;
+	}
+
+	.text-section {
+		padding: 8px;
+	}
+}
+
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
